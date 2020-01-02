@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<style>
+    body,html{
+        width: 100%;
+        height: 100%;
+    }
+    .login{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner{
+        height:300px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .inner>input{
+        margin-bottom: 20px;
+    }
+</style>
+<div class="login">
+    <form method="post" action="/sso/doLogin" class="inner">
+        <span>用户名:</span><input placeholder="account" name="user">
+        <span>密码:</span><input placeholder="password" name="password">
+        <input type="button" value="登录">
+    </form>
+</div>
+</body>
+</html>
